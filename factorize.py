@@ -3,7 +3,6 @@ import logging
 from multiprocessing import Pool, cpu_count
 
 
-
 def factorize(number):
     i = 1
     divisors = []
@@ -33,7 +32,6 @@ def parallel_factorize(*numbers):
     end = time.time()
     logging.debug(f"Parallel execution time: {end - start} seconds")
     return result
-
 
 
 if __name__ == '__main__':
